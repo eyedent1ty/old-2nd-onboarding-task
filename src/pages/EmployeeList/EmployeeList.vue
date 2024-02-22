@@ -50,7 +50,7 @@
   </q-page>
 </template>
 
-<script src="../scripts/EmployeeList.js"></script>
+<script src="./scripts/EmployeeList.js"></script>
 
 <style lang="scss">
 @import './styles/EmployeeList.scss';
