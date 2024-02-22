@@ -17,3 +17,15 @@
     min-width: 184px;
   }
 }
+
+.date-input,
+.select-input {
+  & .q-field__control {
+    border: 1px solid $secondary-color;
+    width: 180px;
+  }
+}
+
+.gap-16 {
+  gap: 16px;
+}
