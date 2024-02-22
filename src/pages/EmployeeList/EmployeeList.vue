@@ -5,21 +5,14 @@
         <h2 class="menu-title q-ma-none">Employee List</h2>
         <div class="flex">
           <q-btn
-            class="btn-add q-mr-lg"
+            class="q-mr-lg"
             no-caps
             unelevated
             rounded
             color="teal"
             label="Add Employee"
           />
-          <q-input
-            class="search-input"
-            placeholder="Search"
-            borderless
-            outlined
-            dense
-            rounded
-          >
+          <q-input placeholder="Search" borderless outlined dense rounded>
             <template #append>
               <q-icon name="search" size="16px" />
             </template>
@@ -37,7 +30,7 @@
           dense
           rounded
         />
-        <q-input class="date-input" placeholder="Date" borderless outlined dense rounded>
+        <q-input placeholder="Date" borderless outlined dense rounded>
           <template #append>
             <q-icon name="calendar_month" size="16px" />
           </template>
@@ -45,13 +38,13 @@
       </div>
     </header>
     <main>
-      <q-table  />
+      <q-table />
     </main>
   </q-page>
 </template>
 
 <script src="./scripts/EmployeeList.js"></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import './styles/EmployeeList.scss';
 </style>

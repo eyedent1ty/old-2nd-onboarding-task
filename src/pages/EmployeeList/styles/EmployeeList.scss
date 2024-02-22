@@ -1,6 +1,6 @@
 @import '/src/css/variables.scss';
 
-.btn-add {
+.q-btn {
   background-color: $primary-color;
   color: white;
   padding: 0 24px;
@@ -11,16 +11,8 @@
   line-height: 20.11px;
 }
 
-.search-input {
-  & .q-field__control {
-    border: 1px solid #708090;
-    min-width: 184px;
-  }
-}
-
-.date-input,
-.select-input {
-  & .q-field__control {
+.q-input, .q-select {
+  :deep(.q-field__control) {
     border: 1px solid $secondary-color;
     width: 180px;
   }
