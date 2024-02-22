@@ -3,6 +3,11 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
+    children: [{
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('../pages/Dashboard/DashboardPage.vue')
+    }]
   },
 
   // Always leave this as last one,
