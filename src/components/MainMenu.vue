@@ -15,7 +15,7 @@
       <q-item class="custom-q-item q-pa-none items-center cursor-pointer">
         <RouterLink
           class="text-decoration-none full-width full-height column justify-center pl-56"
-          to="/menu-2"
+          :to="{ name: 'employee-list' }"
         >
           menu 2
         </RouterLink>
