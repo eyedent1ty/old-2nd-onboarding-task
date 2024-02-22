@@ -11,7 +11,8 @@
   line-height: 20.11px;
 }
 
-.q-input, .q-select {
+.q-input,
+.q-select {
   :deep(.q-field__control) {
     border: 1px solid $secondary-color;
     width: 180px;
@@ -20,4 +21,10 @@
 
 .gap-16 {
   gap: 16px;
+}
+
+.q-table__container {
+  :deep(.table-header) {
+    height: 56px;
+  }
 }

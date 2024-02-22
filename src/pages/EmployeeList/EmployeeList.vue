@@ -38,7 +38,7 @@
       </div>
     </header>
     <main>
-      <q-table />
+      <q-table class="employees-table" table-header-class="table-header" :columns="columns" />
     </main>
   </q-page>
 </template>
