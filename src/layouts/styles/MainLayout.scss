@@ -6,3 +6,25 @@
 .q-icon {
   color: #212121;
 }
+
+.gap-32 {
+  gap: 32px;
+}
+
+.bg-avatar {
+  background-color: #3B3B3B;
+}
+
+.custom-input {
+  & .q-field__control {
+    min-width: 640px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #3b3b3b;
+    padding-left: 24px;
+  }
+
+  & .q-field__prepend {
+    height: 100%;
+  }
+}

@@ -1,17 +1,22 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+    <q-header class="p-y-36 bg-white">
+      <q-toolbar class="row justify-between">
+        <q-input class="custom-input" borderless placeholder="Search Filter...">
+          <template #prepend>
+            <q-icon name="search" />
+          </template>
+        </q-input>
+        <div class="flex items-center gap-32">
+          <q-icon name="notifications" size="36px" />
+          <q-avatar class="bg-avatar" size="48px"></q-avatar>
+        </div>
       </q-toolbar>
     </q-header>
 
     <q-drawer
       :model-value="true"
       show-if-above
-      bordered
       :mini="miniState"
       :mini-width="104"
     >
@@ -56,6 +61,6 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "./styles/MainLayout.scss";
 </style>
