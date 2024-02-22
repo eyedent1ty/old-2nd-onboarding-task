@@ -1,3 +1,7 @@
+.bg-dashboard {
+  background-color: #F5F5F5;
+}
+
 .p-y-36 {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -26,5 +30,13 @@
 
   & .q-field__prepend {
     height: 100%;
+  }
+}
+
+.custom-page-container {
+  padding-left: 508px !important;
+
+  & .q-page {
+    background-color: white;
   }
 }

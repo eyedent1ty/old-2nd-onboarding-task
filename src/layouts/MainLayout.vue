@@ -1,6 +1,6 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header class="p-y-36 bg-white">
+  <q-layout view="lHh Lpr lFf" class="bg-dashboard">
+    <q-header class="p-y-36 bg-dashboard">
       <q-toolbar class="row justify-between">
         <q-input class="custom-input" borderless placeholder="Search Filter...">
           <template #prepend>
@@ -30,7 +30,12 @@
               <q-icon name="home" size="36px"></q-icon>
             </q-item>
             <q-item class="q-py-none">
-              <q-icon class="cursor-pointer" name="menu" size="36px" @click="miniState = !miniState" />
+              <q-icon
+                class="cursor-pointer"
+                name="menu"
+                size="36px"
+                @click="miniState = !miniState"
+              />
             </q-item>
             <q-item class="q-py-none">
               <p class="q-mb-none">Menu</p>
@@ -40,17 +45,24 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <MainMenu />
+
+    <q-page-container class="custom-page-container">
       <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue';
+import MainMenu from 'src/components/MainMenu.vue';
 
 export default defineComponent({
-  name: "MainLayout",
+  name: 'MainLayout',
+
+  components: {
+    MainMenu,
+  },
 
   setup() {
     const miniState = ref(true);
@@ -62,5 +74,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import "./styles/MainLayout.scss";
+@import './styles/MainLayout.scss';
 </style>
