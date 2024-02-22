@@ -1,0 +1,20 @@
+$text-color: #212121;
+
+.card {
+  min-height: 200px;
+
+  .card__title {
+    font-size: 24px;
+    line-height: 30.17px;
+    font-weight: 700;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+
+  .card__description {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10.06px;
+    color: $text-color;
+  }
+}
