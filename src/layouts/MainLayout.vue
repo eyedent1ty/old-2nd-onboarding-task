@@ -37,7 +37,7 @@
 
     <MainMenu />
 
-    <q-page-container class="custom-page-container">
+    <q-page-container class="custom">
       <router-view />
     </q-page-container>
   </q-layout>

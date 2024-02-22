@@ -1,0 +1,19 @@
+@import '/src/css/variables.scss';
+
+.btn-add {
+  background-color: $primary-color;
+  color: white;
+  padding: 0 24px;
+  width: 145px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.11px;
+}
+
+.search-input {
+  & .q-field__control {
+    border: 1px solid #708090;
+    min-width: 184px;
+  }
+}

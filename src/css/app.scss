@@ -1,8 +1,7 @@
 // app global css in SCSS form
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
-$menu-title-color: #249990;
+@import './variables.scss';
 
 body {
   font-family: 'Source Sans 3'
@@ -17,7 +16,7 @@ body {
 }
 
 .menu-title {
-  color: $menu-title-color;
+  color: $primary-color;
   font-weight: 700;
   font-size: 24px;
   line-height: 30.17px;

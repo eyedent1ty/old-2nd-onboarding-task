@@ -33,12 +33,13 @@
   }
 }
 
-.custom-page-container {
+.q-page-container {
   padding-left: 508px !important;
 
   & .q-page {
     background-color: white;
     padding-top: 55px;
     padding-left: 32px;
+    padding-right: 32px;
   }
 }
